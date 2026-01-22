@@ -1,0 +1,78 @@
+/*tabMenu.css*/
+@charset "UTF-8";
+
+/************** TAB MENU *************/
+#tabMenuBox{
+	width:80%;
+	height:580px;
+	background:white;
+	padding:40px;
+	text-align:center;
+}
+
+#tabMenu ul{height:30px; padding:0;}
+
+#tabMenu ul li{
+	float:left;
+	list-style:none;
+	width:25%;
+	padding:0;
+	height:30px;
+	line-height:30px;
+	overflow:hidden;
+	margin-top:0px;
+} 
+
+/*tab메뉴에 마우스 올렸을 때 커서 포인터로 변경*/
+#tabMenu img:hover{cursor:pointer;}
+
+/*탭 메뉴 선택시 진행할 js에서 사용*/
+.selectedItem img{margin-top:-30px;}
+
+/******* TAB CONTENT ************/
+
+#tabContent{
+	width:100%;
+	height:550px;
+	margin-top:20px;
+	border-top:solid 1px #cccccc;
+	border-bottom:solid 1px #cccccc;
+}
+
+/* tabContent의 모든 img 숨기고 */
+#tabContent div {
+	display:none;
+	padding:0;
+	margin-top:20px;
+}
+
+/* tabContent의 첫번째 이미지 표현 */
+#tabContent div:first-child{display:block;}
+
+#tabContent img{width:90%; border:solid 1px #cccccc;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

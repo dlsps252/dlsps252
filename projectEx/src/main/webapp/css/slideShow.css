@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/* show + control 영역 */
+#slideShow {
+	height:520px; /*showbox + controlpannel 두개 영역 합해서 결정*/
+	line-height:520px;
+	background:white;
+	border-bottom:solid #CCC 1px;
+	position:relative;
+}
+
+/* slideShow영역(실제 슬라이딩 일어나는 영역 */
+#slideShowBox{
+	width:1280px; /* 이미지1개의 가로 넓이 */
+	height:480px;  /* 컨트롤 패널 40px */
+	text-align:center;
+	overflow:hidden;  /* 영역 벗어나는 내부 컨텐츠 숨김 */
+}
+
+/* 슬라이드 패널 실제 이미지 담고있는 영역 */
+#slidePanel{
+	position:relative;
+	width:6400px;  /* 이미지 전체의 가로 넓이 1280 X 5 */
+	height:480px;
+}
+
+
+/* 슬라이드 이미지 */
+.slideImage{
+	float:left;
+	width:1280px;
+	height:480px;
+	
+}
+
+/* prev/next 버튼 */
+#prevNextButtonBox{position:relative; z-index:10;}
+#prevButton{position:absolute; top:201px; left:4%; opacity:0.8;}
+#nextButton{position:absolute; top:201px; right:4%; opacity:0.8;}
+
+
+#prevButton:hover {opacity:1;}
+#nextButton:hover {opacity:1;}
+
+/* 컨트롤 버튼 */
+#controlPanel{margin:0 auto; width:160px;}
+#controlPanel img{float:left; margin:10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

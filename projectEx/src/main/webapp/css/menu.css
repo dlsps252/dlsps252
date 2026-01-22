@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/********TOP MENU ***************/
+#topMenuBox {
+	float:right;
+	font-weight:bold;
+	padding-right:10px;
+}
+
+/***************mainMenu *******************/
+#mainMenuBox{
+	width:1280px;
+	height:35px;
+	line-height:35px;
+	background:#ffffff;
+	z-index:10; /*메인페이지 스크롤시 위에 오도록 z-index 높임*/
+	border-top:solid #ccc 1px;
+	border-bottom:solid #ccc 1px;
+}
+
+#mainMenuBox ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#mainMenuBox li{
+	float:left;
+	text-align:center;
+	width:16%;
+	height:30px;
+}
+
+#mainMenuBox li:first-child{
+	width:19%;  /* 20%지만 border 적용할 것이라 19% 사용 */
+	border:solid 3px black;
+}
+
+#mainMenuBox li a{
+	text-decoration:none;
+	color:black;
+	font-size:14px;
+	font-weight:bold;
+}
+
+#mainMenuBox li a:hover{
+	color:red;
+}
+
+/************************ subMenuBox **************************/
+#subMenuBox{
+	width:1280px;
+	height:160px;
+	background:white;
+	z-index:10; /*슬라이드 쇼 박스 위로 드롭다운 하도록 설정*/
+	padding-bottom:0;
+	position:absolute;
+	visibility:hidden; /*시작 시 sub 메뉴 항목 숨김 */
+}
+
+#subMenuBox ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.subMenuItem{
+	width:15%;
+	background:white;
+	border-left:solid #CCC 1px;
+	border-right:solid #CCC 1px;	
+}
+
+#subMenuItem1{
+	position:absolute;
+	margin-left:5%;
+}
+
+#subMenuItem2{
+	position:absolute;
+	margin-left:20%;
+}
+
+#subMenuItem3{
+	position:absolute;
+	margin-left:35%;
+}
+
+#subMenuItem4{
+	position:absolute;
+	margin-left:50%;
+}
+
+#subMenuItem5{
+	position:absolute;
+	margin-left:65%;
+}
+
+#subMenuItem6{
+	position:absolute;
+	margin-left:80%;
+}
+
+.subMenuItem li a {
+	color:#333333;
+	text-decoration:none;
+}
+
+.subMenuItem li a:hover {
+	text-decoration:underline;
+	color:black;
+}
